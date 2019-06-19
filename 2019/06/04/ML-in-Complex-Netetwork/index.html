@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>ML in Complex Netetwork | HoverWings&#39; Site</title>
+    
+    
+        <meta name="keywords" content="ML in Complex Netetwork">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Machine Learning in  Complex Network   Xiang Pan Supervised By: Hong Huang 6/2/2019 --- Complex Network A Complex Network is a graph (network) with non-trivial topological features—features that do">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ML in Complex Netetwork">
+<meta property="og:url" content="hoverwings.site/2019/06/04/ML-in-Complex-Netetwork/index.html">
+<meta property="og:site_name" content="HoverWings&#39; Site">
+<meta property="og:description" content="Machine Learning in  Complex Network   Xiang Pan Supervised By: Hong Huang 6/2/2019 --- Complex Network A Complex Network is a graph (network) with non-trivial topological features—features that do">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-16-38-16.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-47-20.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-02-28.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-11-02.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-11-38.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-24-32.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-10-07.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-25-36.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-27-13.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-28-42.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-29-10.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-16-54-40.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-30-24.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-30-45.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-31-06.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-33-45.png">
+<meta property="og:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-34-02.png">
+<meta property="og:updated_time" content="2019-06-18T17:14:07.799Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ML in Complex Netetwork">
+<meta name="twitter:description" content="Machine Learning in  Complex Network   Xiang Pan Supervised By: Hong Huang 6/2/2019 --- Complex Network A Complex Network is a graph (network) with non-trivial topological features—features that do">
+<meta name="twitter:image" content="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-16-38-16.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="HoverWings&#39; Site" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">HoverWings&#39; Site</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">Main</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/sleepingin.png">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">Main</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/sleepingin.png">
+            <h2 id="name">Xiang Pan</h2>
+            <h3 id="title">Data Mining/Game Developer/Dreamer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>WuHan, China</span>
+            <a id="follow" target="_blank" href="https://github.com/hoverwings/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                5
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                0
+                <span>tag</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/hoverwings/hoverwings.github.io" target="_blank" title="github" class="tooltip">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://stackoverflow.com/users/8826161/hover-pan" target="_blank" title="stack-overflow" class="tooltip">
+                            <i class="fa fa-stack-overflow"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/atom.xml" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Complex_Network
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file active"><a href="/2019/06/04/ML-in-Complex-Netetwork/">ML in Complex Netetwork</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Recommendation_System
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2019/06/04/RS-Transformer/">RS_Transformer</a></li>  <li class="file"><a href="/2019/06/07/RS-Explainability/">RS_Explainability</a></li>  <li class="file"><a href="/2019/06/19/RS-GAN/">RS_GAN</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/2019/06/19/RS-RL/">RS_RL</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title"><span>archives</span></h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title"><span>links</span></h3>
+        <div class="widget">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-ML-in-Complex-Netetwork" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Complex-Network/">Complex_Network</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/06/04/ML-in-Complex-Netetwork/">
+            <time datetime="2019-06-04T06:34:18.000Z" itemprop="datePublished">2019-06-04</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/ML-in-Complex-Netetwork.md"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/ML-in-Complex-Netetwork.md"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/ML-in-Complex-Netetwork.md"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            ML in Complex Netetwork
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">Catalogue</strong>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#complex-network"><span class="toc-number">1.</span> <span class="toc-text">Complex Network</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#traditional-method"><span class="toc-number">1.1.</span> <span class="toc-text">Traditional Method</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mlcomplex-network"><span class="toc-number">1.2.</span> <span class="toc-text">ML+Complex Network</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#pipeline"><span class="toc-number">2.</span> <span class="toc-text">Pipeline</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ml-pipeline"><span class="toc-number">2.1.</span> <span class="toc-text">ML PipeLine</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#build-network"><span class="toc-number">3.</span> <span class="toc-text">Build Network</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#defination"><span class="toc-number">3.1.</span> <span class="toc-text">Defination</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#node"><span class="toc-number">3.1.1.</span> <span class="toc-text">Node</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link"><span class="toc-number">3.1.2.</span> <span class="toc-text">Link</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#similarity-and-diffidence"><span class="toc-number">3.1.2.1.</span> <span class="toc-text">Similarity And Diffidence</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#how-to-determine-the-threshholdhyperparameter"><span class="toc-number">3.1.2.2.</span> <span class="toc-text">How to determine the threshhold(hyperparameter)?</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#representataion"><span class="toc-number">4.</span> <span class="toc-text">Representataion</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#mf"><span class="toc-number">4.1.</span> <span class="toc-text">MF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deep-walk"><span class="toc-number">4.2.</span> <span class="toc-text">Deep Walk</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#hierarchical-huffman-tree"><span class="toc-number">4.2.0.1.</span> <span class="toc-text">Hierarchical Huffman Tree</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#can-be-understood-by-mf"><span class="toc-number">4.2.1.</span> <span class="toc-text">Can be understood by MF?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pte"><span class="toc-number">4.3.</span> <span class="toc-text">PTE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#node2vec-2nd-order-random-walk"><span class="toc-number">4.4.</span> <span class="toc-text">node2vec — 2nd Order Random Walk</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#node2vec-as-implicit-matrix-factorization"><span class="toc-number">4.4.1.</span> <span class="toc-text">node2vec as Implicit Matrix Factorization</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#everything-is-mf"><span class="toc-number">4.5.</span> <span class="toc-text">Everything is MF</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#netmf"><span class="toc-number">5.</span> <span class="toc-text">NetMF</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#application"><span class="toc-number">6.</span> <span class="toc-text">Application</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#abstract"><span class="toc-number">6.1.</span> <span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#real-world"><span class="toc-number">6.2.</span> <span class="toc-text">Real World</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#recommendation-system"><span class="toc-number">7.</span> <span class="toc-text">Recommendation System</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#reference"><span class="toc-number">8.</span> <span class="toc-text">Reference</span></a></li>
+                </div>
+            
+        
+        
+            <!-- $size: 4:3 -->
+<!-- page_number: true -->
+<center>
+<font size="11">Machine Learning in <br> Complex Network </font>
+</center>
+<p>Xiang Pan<br>
+Supervised By: Hong Huang<br>
+6/2/2019 ---</p>
+<h1 id="complex-network">Complex Network</h1>
+<p>A <strong>Complex Network</strong> is a graph (network) with non-trivial topological features—features that do not occur in simple networks such as lattices or random graphs but often occur in graphs modelling of real systems.</p>
+<p><strong>Node and Link</strong>:The general model for the world <strong>CS</strong>?:Compute and Storage</p>
+<hr>
+<h2 id="traditional-method">Traditional Method</h2>
+<ul>
+<li>Dynamics
+<ul>
+<li>Deep Walk
+<ul>
+<li>Population Predication</li>
+</ul></li>
+<li>Propagation Theory
+<ul>
+<li>Infectious Diseases Propagation</li>
+</ul></li>
+</ul></li>
+<li>Cluster Theory
+<ul>
+<li>Aggregation
+<ul>
+<li>Community Dection</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="mlcomplex-network">ML+Complex Network</h2>
+<ul>
+<li>More information than Vector
+<ul>
+<li>Build and represent do not loss critical information
+<ul>
+<li>porpertity</li>
+<li>structure</li>
+</ul></li>
+<li>Adapt to more general dataset type</li>
+</ul></li>
+<li>More Method
+<ul>
+<li><strong>Graph CNN/DNN/VAE/GAN</strong></li>
+</ul></li>
+</ul>
+<hr>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-16-38-16.png"></p>
+<!-- <img src="./ML-in-Complex-Netetwork/2019-06-03-16-38-16.png" width = "400" height = "400" div align= center /> -->
+<hr>
+<h1 id="pipeline">Pipeline</h1>
+<h2 id="ml-pipeline">ML PipeLine</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">digraph G</span><br><span class="line">&#123;</span><br><span class="line">    &quot;Select Topic&quot;-&gt;&quot;Preparing Data Set(Data Clean)&quot;-&gt;&quot;Feature Engineering&quot;-&gt;&quot;Bilud Model&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="build-network">Build Network</h1>
+<h2 id="defination">Defination</h2>
+<h3 id="node">Node</h3>
+<p><span class="math display">\[N=O(Node)\]</span> can be the anything of the world The understanding</p>
+<hr>
+<h3 id="link">Link</h3>
+<h4 id="similarity-and-diffidence">Similarity And Diffidence</h4>
+<p><span class="math display">\[{ V*V \in R  }\]</span></p>
+<p><span class="math display">\[{ S_{ij}=s(v_i,v_j)  }\]</span></p>
+<p>The <strong>Similarity Function</strong> can be the diastance of vector representation <span class="math display">\[{ D_{ij}=d(v_i,v_j)  }\]</span></p>
+<hr>
+<p>The <strong>Diffidence Function</strong> can be calculated by the Similarity Function <span class="math display">\[
+{
+    d(v_i,v_j)=\sqrt {s(v_i,v_i)+s(v_j,v_j)-2s(v_i,v_j)}
+}
+\]</span></p>
+<p><span class="math display">\[{ P_{ij}=\alpha * S_{ij} + \beta *1/D_{ij}       }\]</span></p>
+<p>Then set a <strong>threshhold</strong> to build the link</p>
+<hr>
+<h4 id="how-to-determine-the-threshholdhyperparameter">How to determine the threshhold(hyperparameter)?</h4>
+<ul>
+<li>Network sparsity(Experience) &gt;After obtaining the base image matrix and coefficient matrix of non-negative matrix factorization (NMF), Hoyer [1] proposed that the degree of difference between the L1 norm and the L2 norm can be used to measure the sparsity of the matrix after decomposition.</li>
+<li>Training result
+<ul>
+<li>Auto ML</li>
+</ul></li>
+</ul>
+<h1 id="representataion">Representataion</h1>
+<p><strong>Network Representation</strong>:Using some method to reduce the dimension of the data, then the network can be represent as a <strong>Vector</strong> - <strong>Graph Embedding</strong></p>
+<hr>
+<h2 id="mf">MF</h2>
+<p>M is an <strong>Orthogonal matrix</strong> ### SVD <img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-47-20.png"></p>
+<hr>
+<p><span class="math display">\[
+M \in Space_{node * node}
+\]</span></p>
+<p><span class="math inline">\(U\)</span> is the main Vector representation <span class="math inline">\(V= \Sigma * V^*\)</span> is the Background Vector Repersentation</p>
+<hr>
+<h2 id="deep-walk">Deep Walk</h2>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-02-28.png"></p>
+<h4 id="hierarchical-huffman-tree">Hierarchical Huffman Tree</h4>
+<hr>
+<h3 id="can-be-understood-by-mf">Can be understood by MF?</h3>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-11-02.png"></p>
+<hr>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-11-38.png"></p>
+<hr>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-24-32.png"></p>
+<hr>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-10-07.png"></p>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-25-36.png"></p>
+<h2 id="pte">PTE</h2>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-27-13.png"></p>
+<h2 id="node2vec-2nd-order-random-walk">node2vec — 2nd Order Random Walk</h2>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-28-42.png"></p>
+<hr>
+<h3 id="node2vec-as-implicit-matrix-factorization">node2vec as Implicit Matrix Factorization</h3>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-29-10.png"></p>
+<hr>
+<h2 id="everything-is-mf">Everything is MF</h2>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-16-54-40.png"></p>
+<hr>
+<h1 id="netmf">NetMF</h1>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-30-24.png"></p>
+<hr>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-30-45.png"></p>
+<hr>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-31-06.png"></p>
+<h1 id="application">Application</h1>
+<h2 id="abstract">Abstract</h2>
+<ul>
+<li>Link Prediction</li>
+<li>Clustering</li>
+<li>Dynamic Network Analysis</li>
+</ul>
+<h2 id="real-world">Real World</h2>
+<ul>
+<li>Infectious Diseases</li>
+<li>Academic Network</li>
+<li>Media Web
+<ul>
+<li><strong>Recommendation System(RS)</strong></li>
+<li>Terrorist Dection</li>
+</ul></li>
+</ul>
+<hr>
+<h1 id="recommendation-system">Recommendation System</h1>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-33-45.png"></p>
+<hr>
+<p><img src="/2019/06/04/ML-in-Complex-Netetwork/2019-06-03-17-34-02.png"></p>
+<hr>
+<h1 id="reference">Reference</h1>
+<ul>
+<li><a href="https://www.aminer.cn/nrl_www2019" target="_blank" rel="noopener">Jie Tang's Tutorial in WWW 2019</a></li>
+<li><a href>Machine Leaning in Complex Network</a></li>
+</ul>
+<hr>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2019/06/07/RS-Explainability/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    RS_Explainability
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2019/06/04/RS-Transformer/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">RS_Transformer</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+        <section id="comments"> 
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+ </section>
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Xiang Pan &copy; 2019 
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'hoverwings.site/2019/06/04/ML-in-Complex-Netetwork/';
+        
+        this.page.identifier = 'ML-in-Complex-Netetwork';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>RS_Transformer | HoverWings&#39; Site</title>
+    
+    
+        <meta name="keywords" content="RS_Transformer">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Behavior Sequence Transformer for E-commerce Recommendation in Alibaba   Abstract  Embedding&amp;amp;MLP paradigm: raw features are embedded into lowdimensional vectors  ignoring the sequential nature of">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RS_Transformer">
+<meta property="og:url" content="hoverwings.site/2019/06/04/RS-Transformer/index.html">
+<meta property="og:site_name" content="HoverWings&#39; Site">
+<meta property="og:description" content="Behavior Sequence Transformer for E-commerce Recommendation in Alibaba   Abstract  Embedding&amp;amp;MLP paradigm: raw features are embedded into lowdimensional vectors  ignoring the sequential nature of">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-10-36.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-16-51.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-17-12.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-18-04.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-30-16.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-31-21.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-34-53.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-39-58.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-36-45.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-45-45.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-46-58.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-49-56.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-50-42.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-51-23.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-52-08.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-53-02.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-53-15.png">
+<meta property="og:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-53-32.png">
+<meta property="og:updated_time" content="2019-06-19T14:52:14.456Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RS_Transformer">
+<meta name="twitter:description" content="Behavior Sequence Transformer for E-commerce Recommendation in Alibaba   Abstract  Embedding&amp;amp;MLP paradigm: raw features are embedded into lowdimensional vectors  ignoring the sequential nature of">
+<meta name="twitter:image" content="/2019/06/04/RS-Transformer/2019-06-04-01-10-36.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="HoverWings&#39; Site" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">HoverWings&#39; Site</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">Main</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/sleepingin.png">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">Main</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/sleepingin.png">
+            <h2 id="name">Xiang Pan</h2>
+            <h3 id="title">Data Mining/Game Developer/Dreamer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>WuHan, China</span>
+            <a id="follow" target="_blank" href="https://github.com/hoverwings/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                5
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                0
+                <span>tag</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/hoverwings/hoverwings.github.io" target="_blank" title="github" class="tooltip">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://stackoverflow.com/users/8826161/hover-pan" target="_blank" title="stack-overflow" class="tooltip">
+                            <i class="fa fa-stack-overflow"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/atom.xml" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Complex_Network
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2019/06/04/ML-in-Complex-Netetwork/">ML in Complex Netetwork</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Recommendation_System
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file active"><a href="/2019/06/04/RS-Transformer/">RS_Transformer</a></li>  <li class="file"><a href="/2019/06/07/RS-Explainability/">RS_Explainability</a></li>  <li class="file"><a href="/2019/06/19/RS-GAN/">RS_GAN</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/2019/06/19/RS-RL/">RS_RL</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title"><span>archives</span></h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title"><span>links</span></h3>
+        <div class="widget">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-RS-Transformer" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Recommendation-System/">Recommendation_System</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/06/04/RS-Transformer/">
+            <time datetime="2019-06-03T18:25:12.000Z" itemprop="datePublished">2019-06-04</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/RS-Transformer.md"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/RS-Transformer.md"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/RS-Transformer.md"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            RS_Transformer
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">Catalogue</strong>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#behavior-sequence-transformer-for-e-commerce-recommendation-in-alibaba"><span class="toc-number">1.</span> <span class="toc-text">Behavior Sequence Transformer for E-commerce Recommendation in Alibaba</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#abstract"><span class="toc-number">2.</span> <span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#transforemerattention-is-all-you-need"><span class="toc-number">3.</span> <span class="toc-text">Transforemer(Attention is all you need)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#architecture"><span class="toc-number">3.1.</span> <span class="toc-text">Architecture</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#self-attention-encoder"><span class="toc-number">3.2.</span> <span class="toc-text">Self-Attention Encoder</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#decoder"><span class="toc-number">3.3.</span> <span class="toc-text">Decoder</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#loss"><span class="toc-number">3.4.</span> <span class="toc-text">loss</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#bst"><span class="toc-number">4.</span> <span class="toc-text">BST</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#architecture-1"><span class="toc-number">4.1.</span> <span class="toc-text">Architecture</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#feature"><span class="toc-number">4.2.</span> <span class="toc-text">Feature</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#general-embedding"><span class="toc-number">4.2.1.</span> <span class="toc-text">General Embedding</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#positional-embedding"><span class="toc-number">4.2.2.</span> <span class="toc-text">Positional embedding</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#transformer"><span class="toc-number">4.3.</span> <span class="toc-text">Transformer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#self-attention-layer"><span class="toc-number">4.3.1.</span> <span class="toc-text">Self-attention layer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#point-wise-feed-forward-networks"><span class="toc-number">4.3.2.</span> <span class="toc-text">Point-wise Feed-Forward Networks</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mlp-layers-and-loss-function"><span class="toc-number">4.4.</span> <span class="toc-text">MLP layers and Loss function</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#result"><span class="toc-number">5.</span> <span class="toc-text">Result</span></a></li></ol>
+                </div>
+            
+        
+        
+            <h1 id="behavior-sequence-transformer-for-e-commerce-recommendation-in-alibaba">Behavior Sequence Transformer for E-commerce Recommendation in Alibaba</h1>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-10-36.png"></p>
+<hr>
+<h1 id="abstract">Abstract</h1>
+<ul>
+<li><strong>Embedding&amp;MLP paradigm</strong>: raw features are embedded into lowdimensional vectors
+<ul>
+<li>ignoring the sequential nature of users’ behaviors</li>
+</ul></li>
+<li><strong>Transformer model</strong> to capture the sequential signals underlying users’ behavior sequences for recommendation</li>
+</ul>
+<hr>
+<h1 id="transforemerattention-is-all-you-need">Transforemer(Attention is all you need)</h1>
+<h2 id="architecture">Architecture</h2>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-16-51.png"></p>
+<hr>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-17-12.png"></p>
+<hr>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-18-04.png"></p>
+<p>Every encoder do not share their weights</p>
+<hr>
+<h2 id="self-attention-encoder">Self-Attention Encoder</h2>
+<p>Input Word-&gt;Embededing <span class="math display">\[ q_1=V*W_q \]</span> <span class="math display">\[ k_1=V*W_k \]</span> <span class="math display">\[ v_1=V*W_v \]</span></p>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-30-16.png"></p>
+<hr>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-31-21.png"></p>
+<hr>
+<p><strong>Position</strong>: diffierent distance to different pos</p>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-34-53.png"></p>
+<hr>
+<h2 id="decoder">Decoder</h2>
+<p>The Unis number is O(Word)<br>
+<img src="/2019/06/04/RS-Transformer/2019-06-04-01-39-58.png"></p>
+<hr>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-36-45.png"></p>
+<hr>
+<h2 id="loss">loss</h2>
+<p>The differience of 2 distribution - Cross Entropy - KL Distance</p>
+<hr>
+<h1 id="bst">BST</h1>
+<h2 id="architecture-1">Architecture</h2>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-45-45.png"></p>
+<hr>
+<h2 id="feature">Feature</h2>
+<h3 id="general-embedding">General Embedding</h3>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-46-58.png"></p>
+<hr>
+<h3 id="positional-embedding">Positional embedding</h3>
+<p><span class="math display">\[pos(v_i) = t(v_t) − t(v_i)\]</span></p>
+<p>where <span class="math inline">\(t(v_t)\)</span> represents the recommending time and <span class="math inline">\(t(v_i)\)</span> the timestamp when user click item <span class="math inline">\(v_i\)</span>.</p>
+<hr>
+<h2 id="transformer">Transformer</h2>
+<h3 id="self-attention-layer">Self-attention layer</h3>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-49-56.png"></p>
+<hr>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-50-42.png"></p>
+<hr>
+<h3 id="point-wise-feed-forward-networks">Point-wise Feed-Forward Networks</h3>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-51-23.png"></p>
+<hr>
+<h2 id="mlp-layers-and-loss-function">MLP layers and Loss function</h2>
+<p><strong>binary classification problem</strong><br>
+<img src="/2019/06/04/RS-Transformer/2019-06-04-01-52-08.png"></p>
+<hr>
+<h1 id="result">Result</h1>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-53-02.png"> <img src="/2019/06/04/RS-Transformer/2019-06-04-01-53-15.png"></p>
+<hr>
+<p><img src="/2019/06/04/RS-Transformer/2019-06-04-01-53-32.png"></p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2019/06/04/ML-in-Complex-Netetwork/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    ML in Complex Netetwork
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+
+
+
+    
+    
+        <section id="comments"> 
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+ </section>
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Xiang Pan &copy; 2019 
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'hoverwings.site/2019/06/04/RS-Transformer/';
+        
+        this.page.identifier = 'RS-Transformer';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

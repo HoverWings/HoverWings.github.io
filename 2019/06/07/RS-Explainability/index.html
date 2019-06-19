@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>RS_Explainability | HoverWings&#39; Site</title>
+    
+    
+        <meta name="keywords" content="RS_Explainability">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="PanXiang 2019.4.9 Problem why such items are recommended why they not only provideusers with the recommendations effectiveness efficiency persuasiveness user satisfaction (how presented)display style">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RS_Explainability">
+<meta property="og:url" content="hoverwings.site/2019/06/07/RS-Explainability/index.html">
+<meta property="og:site_name" content="HoverWings&#39; Site">
+<meta property="og:description" content="PanXiang 2019.4.9 Problem why such items are recommended why they not only provideusers with the recommendations effectiveness efficiency persuasiveness user satisfaction (how presented)display style">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS0.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS1.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS2.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS3.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS4.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS5.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS6.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS7.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS8.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS9.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS10.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS11.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS12.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS13.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS14.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS15.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS16.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS17.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS18.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS19.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS20.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS21.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS22.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS23.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS24.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS25.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS26.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS27.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS28.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS29.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS30.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS31.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS32.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS33.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS34.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS35.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS36.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS37.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS38.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS39.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS40.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS41.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS42.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS43.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS44.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS45.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS46.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS47.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS48.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS49.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS50.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS51.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS52.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS53.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS54.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS55.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS56.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS57.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS58.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS59.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS60.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS61.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS62.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS63.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS64.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS65.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS66.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS67.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS68.png">
+<meta property="og:image" content="/2019/06/07/RS-Explainability/ExplainableRS69.png">
+<meta property="og:updated_time" content="2019-06-18T18:24:34.897Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RS_Explainability">
+<meta name="twitter:description" content="PanXiang 2019.4.9 Problem why such items are recommended why they not only provideusers with the recommendations effectiveness efficiency persuasiveness user satisfaction (how presented)display style">
+<meta name="twitter:image" content="/2019/06/07/RS-Explainability/ExplainableRS0.png">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="HoverWings&#39; Site" type="application/atom+xml">
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">HoverWings&#39; Site</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">Main</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/sleepingin.png">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">Main</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/sleepingin.png">
+            <h2 id="name">Xiang Pan</h2>
+            <h3 id="title">Data Mining/Game Developer/Dreamer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>WuHan, China</span>
+            <a id="follow" target="_blank" href="https://github.com/hoverwings/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                5
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                0
+                <span>tag</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/hoverwings/hoverwings.github.io" target="_blank" title="github" class="tooltip">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://stackoverflow.com/users/8826161/hover-pan" target="_blank" title="stack-overflow" class="tooltip">
+                            <i class="fa fa-stack-overflow"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/atom.xml" target="_blank" title="rss" class="tooltip">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id="categories">
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id="allExpand" href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Complex_Network
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2019/06/04/ML-in-Complex-Netetwork/">ML in Complex Netetwork</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Recommendation_System
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2019/06/04/RS-Transformer/">RS_Transformer</a></li>  <li class="file active"><a href="/2019/06/07/RS-Explainability/">RS_Explainability</a></li>  <li class="file"><a href="/2019/06/19/RS-GAN/">RS_GAN</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/2019/06/19/RS-RL/">RS_RL</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title"><span>archives</span></h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    
+        
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title"><span>links</span></h3>
+        <div class="widget">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-RS-Explainability" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Recommendation-System/">Recommendation_System</a>
+    </div>
+
+                        
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/06/07/RS-Explainability/">
+            <time datetime="2019-06-07T15:56:11.000Z" itemprop="datePublished">2019-06-07</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/RS-Explainability.md"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/RS-Explainability.md"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/RS-Explainability.md"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            RS_Explainability
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">Catalogue</strong>
+                    
+                </div>
+            
+        
+        
+            <p><img src="/2019/06/07/RS-Explainability/ExplainableRS0.png" width="500px"></p>
+<p><strong>PanXiang</strong> 2019.4.9</p>
+<p><strong>Problem</strong></p>
+<p>why such items are recommended</p>
+<p>why they not only provideusers with the recommendations</p>
+<p>effectiveness</p>
+<p>efficiency</p>
+<p>persuasiveness</p>
+<p>user satisfaction</p>
+<p>(how presented)display style:text/visual</p>
+<p>(what information used)model:matrix factorization,topic modeling, graphbased models, deep learning, knowledge-graph embedding, association rule mining</p>
+<p><strong>Time Line</strong></p>
+<p><strong>CF(Memory-Based)</strong></p>
+<p><strong>C</strong> <strong>ontent-</strong> <strong>B</strong> <strong>ased</strong> <strong>CF(feature based)</strong></p>
+<p>(price, color, brand of the goods in e-commerce, or the genre, director, duration of the movies inreview systems)</p>
+<p><strong>User-based CF</strong> <strong>(user embedding?)</strong></p>
+<p><strong>Item-based CF(Item embedding?)</strong></p>
+<p>MF(Model-Based)</p>
+<p>生成式模型/判别式模型?</p>
+<p><strong>MF</strong></p>
+<p><strong>LFM(Latent Factor Model)</strong></p>
+<p>m user</p>
+<p>n item</p>
+<p>A: user-(item favor value)</p>
+<p>U: user-feature</p>
+<p>V: feature-(itemfavor value)</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS1.png" width="277px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS2.png" width="500px"></p>
+<p><strong>MF</strong></p>
+<p><strong>LFM(Latent Factor Model)</strong> <strong>/Singular Value Decomposition(SVD)?</strong></p>
+<p>m user</p>
+<p>n item</p>
+<p>A: user-(item favor value)</p>
+<p>U: user-feature</p>
+<p>V: feature-(itemfavor value)</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS3.png" width="277px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS4.png" width="451px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS5.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS6.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS7.png" width="227px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS8.png" width="500px"></p>
+<p>yi反应喜好偏置</p>
+<p>I(u)所有交互</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS9.png" width="500px"></p>
+<p>behaviour can reflect favor</p>
+<p>2008 KDD Factorization Meets the Neighborhood: a Multifaceted Collaborative Filtering Model</p>
+<p><strong>E</strong> <strong>FM(Explicit Factor Model)</strong></p>
+<p>+explicit user opinions</p>
+<p>explicit product features</p>
+<p>user opinions by phrase-level sentiment analysis on user reviews</p>
+<p>generate according to specific product features to the user’s interests and the hidden features learned</p>
+<p>SIGIR 2014Explicit Factor Models for Explainable Recommendation based on Phrase-level Sentiment Analysis</p>
+<p><strong>EFM(Explicit Factor Model)</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS10.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS11.png" width="500px"></p>
+<p>SIGIR 2014Explicit Factor Models for Explainable Recommendation based on Phrase-level Sentiment Analysis</p>
+<p><strong>EFM(Explicit Factor Model)</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS12.png" width="500px"></p>
+<p>N=5 for five stars</p>
+<p>feature Fj is mentioned by user ui for tij times</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS13.png" width="500px"></p>
+<p>Fj is mentioned for k times on item pi</p>
+<p>SIGIR 2014Explicit Factor Models for Explainable Recommendation based on Phrase-level Sentiment Analysis</p>
+<p><strong>EFM(Explicit Factor Model)</strong></p>
+<p><strong>Explicit</strong> <strong>features</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS14.png" width="500px"></p>
+<p>feature: screen/earphone</p>
+<p>factor: ???</p>
+<p>X:user-feature attention matrix</p>
+<p>Y:item-feature quality matrix</p>
+<p>U1 user- factor</p>
+<p>V feature-factor</p>
+<p>U2 item- factor</p>
+<p>r factor nums</p>
+<p>m user</p>
+<p>p feature</p>
+<p>n item</p>
+<p>SIGIR 2014Explicit Factor Models for Explainable Recommendation based on Phrase-level Sentiment Analysis</p>
+<p><strong>EFM(Explicit Factor Model)</strong></p>
+<p><strong>Latent</strong> <strong>f</strong> <strong>actors</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS15.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS16.png" width="500px"></p>
+<p>When r = 0, this model reduces to a traditional latent factorization model on user-item rating matrix A</p>
+<p>which means that the explicit features are not used for recommendations</p>
+<p><strong>EFM(Explicit Factor Model)</strong> <strong>+SVD++?</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS17.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS18.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS19.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS20.png" width="410px"></p>
+<p>SIGIR’18 Explainable Recommendation via Multi-Task Learning in Opinionated Text Data</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS21.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS22.png" width="500px"></p>
+<p><strong>ConvMF=CNN+PMF</strong></p>
+<p><strong>PMF</strong></p>
+<p>R: score Mat</p>
+<p>posterior probability</p>
+<p>M item</p>
+<p>N doc</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS23.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS24.png" width="481px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS25.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS26.png" width="156px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS27.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS28.png" width="128px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS29.png" width="129px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS30.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS31.png" width="381px"></p>
+<p>2016Convolutional matrix factorization for document context-aware recommendation</p>
+<p><strong>CNN:</strong></p>
+<p><strong>(Music:Fourier-&gt;image-&gt;CNN predict</strong></p>
+<p><strong>Genetrate Feature)</strong></p>
+<p>Conv -Classification-&gt;feature extraction</p>
+<p>MF -Regression</p>
+<p>2016Convolutional matrix factorization for document context-aware recommendation</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS32.png" width="500px"></p>
+<p>Z[t]:update gate vector</p>
+<p>R[t]:reset gate vector</p>
+<p>RecSys17 Sequential User-based Recurrent Neural Network Recommendations</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS33.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS34.png" width="491px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS35.png" width="500px"></p>
+<p>RecSys17 Sequential User-based Recurrent Neural Network Recommendations</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS36.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS37.png" width="500px"></p>
+<p><strong>Text</strong></p>
+<p><strong>Sentence:</strong></p>
+<p><strong>Topic words:(features)</strong></p>
+<p><strong>Visual</strong></p>
+<p><strong>Friends</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS38.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS39.png" width="473px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS40.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS41.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS42.png" width="500px"></p>
+<p>generated character by</p>
+<p>character</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS43.png" width="500px"></p>
+<p>concatenated word</p>
+<p>embeddings of user, item, and rating</p>
+<p>2018Automatic Generation of Natural Language Explanations</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS44.png" width="500px"></p>
+<p><strong>Text-based(NLP)</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS45.png" width="500px"></p>
+<p>2018Automatic Generation of Natural Language Explanations</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS46.png" width="500px"></p>
+<p><strong>Text-based(NLP)</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS47.png" width="500px"></p>
+<p>2018Automatic Generation of Natural Language Explanations</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS48.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS49.png" width="500px"></p>
+<p><strong>Knowledge-base</strong> <strong>=path comlpetion</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS50.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS51.png" width="500px"></p>
+<p>2019Unifying Knowledge Graph Learning and Recommendation: Towards a Better Understanding of User Preferences</p>
+<p><strong>Knowledge-base</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS52.png" width="500px"></p>
+<p>AAAI2019Unifying Knowledge Graph Learning and Recommendation: Towards a Better Understanding of User Preferences</p>
+<p><strong>Knowledge-base</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS53.png" width="500px"></p>
+<p>AAAI2019Unifying Knowledge Graph Learning and Recommendation: Towards a Better Understanding of User Preferences</p>
+<p><strong>Knowledge-base</strong></p>
+<p>TransE</p>
+<p>TransH</p>
+<p>It assumes that each relation</p>
+<p>owns a hyperplane, and the translation between head entity and</p>
+<p>tail entity is valid only if they are projected to the same hyperplane</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS54.png" width="139px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS55.png" width="176px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS56.png" width="500px"></p>
+<p>WWW2019Unifying Knowledge Graph Learning and Recommendation:Towards a Better Understanding of User Preferences</p>
+<p><strong>Knowledge-base</strong></p>
+<p>TransH</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS57.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS58.png" width="242px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS59.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS60.png" width="500px"></p>
+<p>WWW2019Unifying Knowledge Graph Learning and Recommendation:Towards a Better Understanding of User Preferences</p>
+<p><strong>Evaluation-RS</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS61.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS62.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS63.png" width="500px"></p>
+<p>reli = 1 if the i-th element is a positive item</p>
+<p><strong>Evaluation</strong> <strong>-Explainable</strong></p>
+<p>explainability</p>
+<p>EP:explainability precision</p>
+<p>ER:explainabilityrecall</p>
+<p>Text:</p>
+<p>BLUE: 不同长度的统计值差异计算</p>
+<p>Rough(Recall-Oriented Understudy for Gisting Evaluation)</p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS64.png" width="500px"></p>
+<p>LCSLongest Child String</p>
+<p>Open Question</p>
+<p>DL explainability</p>
+<p>Heterogenous Information Modeling</p>
+<p>Text/Image/Audio Search</p>
+<p>Natural Language Generation for Explanation</p>
+<p>QA System</p>
+<p>Explanation beyond Persuasiveness</p>
+<p>letting the user know why not to buy a certain product</p>
+<p>the system can help to save time for the users and to win user’s trustin the system</p>
+<p>Open Question</p>
+<p>Aggregation of Different Explanations</p>
+<p><strong>Explainable ML</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS65.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS66.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS67.png" width="500px"></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS68.png" width="500px"></p>
+<p><strong>Explainable</strong> <strong>D</strong> <strong>L</strong></p>
+<p><img src="/2019/06/07/RS-Explainability/ExplainableRS69.png" width="500px"></p>
+<p>Understanding Black-box Predictions via Influence Functions</p>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2019/06/19/RS-GAN/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    RS_GAN
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2019/06/04/ML-in-Complex-Netetwork/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">ML in Complex Netetwork</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+        <section id="comments"> 
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+ </section>
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Xiang Pan &copy; 2019 
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'hoverwings.site/2019/06/07/RS-Explainability/';
+        
+        this.page.identifier = 'RS-Explainability';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
