@@ -6,7 +6,7 @@ tags:
 categories: Recommendation_System
 ---
 # Behavior Sequence Transformer for E-commerce Recommendation in Alibaba
-![](Transformer-RS/2019-06-04-01-10-36.png)
+![](RS-Transformer/2019-06-04-01-10-36.png)
 
 ---
 
@@ -22,17 +22,17 @@ categories: Recommendation_System
 
 # Transforemer(Attention is all you need)
 ## Architecture
-![](Transformer-RS/2019-06-04-01-16-51.png)
+![](RS-Transformer/2019-06-04-01-16-51.png)
 
 ---
 
 
-![](Transformer-RS/2019-06-04-01-17-12.png)
+![](RS-Transformer/2019-06-04-01-17-12.png)
 
 ---
 
 
-![](Transformer-RS/2019-06-04-01-18-04.png)
+![](RS-Transformer/2019-06-04-01-18-04.png)
 
 Every encoder do not share their weights
 
@@ -46,12 +46,12 @@ $$ q_1=V*W_q $$
 $$ k_1=V*W_k $$
 $$ v_1=V*W_v $$
 
-![](Transformer-RS/2019-06-04-01-30-16.png)
+![](RS-Transformer/2019-06-04-01-30-16.png)
 
 ---
 
 
-![](Transformer-RS/2019-06-04-01-31-21.png)
+![](RS-Transformer/2019-06-04-01-31-21.png)
 
 ---
 
@@ -59,7 +59,7 @@ $$ v_1=V*W_v $$
 
 **Position**: diffierent distance to different pos 
 
-![](Transformer-RS/2019-06-04-01-34-53.png)
+![](RS-Transformer/2019-06-04-01-34-53.png)
 
 ---
 
@@ -68,12 +68,12 @@ $$ v_1=V*W_v $$
 
 ## Decoder
 The Unis number is O(Word)  
-![](Transformer-RS/2019-06-04-01-39-58.png)  
+![](RS-Transformer/2019-06-04-01-39-58.png)  
 
 ---
 
 
-![](Transformer-RS/2019-06-04-01-36-45.png)    
+![](RS-Transformer/2019-06-04-01-36-45.png)    
 
 ---
 
@@ -93,7 +93,7 @@ The differience of 2 distribution
 # BST
 
 ## Architecture
-![](Transformer-RS/2019-06-04-01-45-45.png)
+![](RS-Transformer/2019-06-04-01-45-45.png)
 
 
 ---
@@ -101,7 +101,7 @@ The differience of 2 distribution
 
 ## Feature
 ### General Embedding
-![](Transformer-RS/2019-06-04-01-46-58.png)
+![](RS-Transformer/2019-06-04-01-46-58.png)
 
 ---
 
@@ -118,12 +118,12 @@ where $t(v_t)$ represents the recommending time and $t(v_i)$ the timestamp when 
 
 ## Transformer
 ### Self-attention layer  
-![](Transformer-RS/2019-06-04-01-49-56.png)
+![](RS-Transformer/2019-06-04-01-49-56.png)
 
 ---
 
 
-![](Transformer-RS/2019-06-04-01-50-42.png)
+![](RS-Transformer/2019-06-04-01-50-42.png)
 
 ---
 
@@ -131,7 +131,7 @@ where $t(v_t)$ represents the recommending time and $t(v_i)$ the timestamp when 
 
 
 ### Point-wise Feed-Forward Networks
-![](Transformer-RS/2019-06-04-01-51-23.png)
+![](RS-Transformer/2019-06-04-01-51-23.png)
 
 
 ---
@@ -139,20 +139,20 @@ where $t(v_t)$ represents the recommending time and $t(v_i)$ the timestamp when 
 
 ## MLP layers and Loss function
 **binary classification problem**   
-![](Transformer-RS/2019-06-04-01-52-08.png)  
+![](RS-Transformer/2019-06-04-01-52-08.png)  
 
 
 ---
 
 
 # Result
-![](Transformer-RS/2019-06-04-01-53-02.png)
-![](Transformer-RS/2019-06-04-01-53-15.png)
+![](RS-Transformer/2019-06-04-01-53-02.png)
+![](RS-Transformer/2019-06-04-01-53-15.png)
 
 ---
 
 
-![](Transformer-RS/2019-06-04-01-53-32.png)
+![](RS-Transformer/2019-06-04-01-53-32.png)
 
 
 

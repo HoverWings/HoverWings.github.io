@@ -6,7 +6,7 @@ tags:
 categories: Recommendation_System
 ---
 
-<img src="Explainable-RS/ExplainableRS0.png" width=500px />
+<img src="RS-Explainability/ExplainableRS0.png" width=500px />
 
 **PanXiang**
 							2019.4.9
@@ -59,9 +59,9 @@ U: user\-feature
 
 V: feature\-(itemfavor value)
 
-<img src="Explainable-RS/ExplainableRS1.png" width=277px />
+<img src="RS-Explainability/ExplainableRS1.png" width=277px />
 
-<img src="Explainable-RS/ExplainableRS2.png" width=500px />
+<img src="RS-Explainability/ExplainableRS2.png" width=500px />
 
 __MF__
 
@@ -77,23 +77,23 @@ U: user\-feature
 
 V: feature\-(itemfavor value)
 
-<img src="Explainable-RS/ExplainableRS3.png" width=277px />
+<img src="RS-Explainability/ExplainableRS3.png" width=277px />
 
-<img src="Explainable-RS/ExplainableRS4.png" width=451px />
+<img src="RS-Explainability/ExplainableRS4.png" width=451px />
 
-<img src="Explainable-RS/ExplainableRS5.png" width=500px />
+<img src="RS-Explainability/ExplainableRS5.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS6.png" width=500px />
+<img src="RS-Explainability/ExplainableRS6.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS7.png" width=227px />
+<img src="RS-Explainability/ExplainableRS7.png" width=227px />
 
-<img src="Explainable-RS/ExplainableRS8.png" width=500px />
+<img src="RS-Explainability/ExplainableRS8.png" width=500px />
 
 yi反应喜好偏置
 
 I(u)所有交互
 
-<img src="Explainable-RS/ExplainableRS9.png" width=500px />
+<img src="RS-Explainability/ExplainableRS9.png" width=500px />
 
 behaviour can reflect favor
 
@@ -113,21 +113,21 @@ SIGIR 2014Explicit Factor Models for Explainable Recommendation based on Phrase\
 
 __EFM(Explicit Factor Model)__
 
-<img src="Explainable-RS/ExplainableRS10.png" width=500px />
+<img src="RS-Explainability/ExplainableRS10.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS11.png" width=500px />
+<img src="RS-Explainability/ExplainableRS11.png" width=500px />
 
 SIGIR 2014Explicit Factor Models for Explainable Recommendation based on Phrase\-level Sentiment Analysis
 
 __EFM(Explicit Factor Model)__
 
-<img src="Explainable-RS/ExplainableRS12.png" width=500px />
+<img src="RS-Explainability/ExplainableRS12.png" width=500px />
 
 N=5 for five stars
 
 feature Fj is mentioned by user ui for tij times
 
-<img src="Explainable-RS/ExplainableRS13.png" width=500px />
+<img src="RS-Explainability/ExplainableRS13.png" width=500px />
 
 Fj is mentioned for k times on item pi
 
@@ -137,7 +137,7 @@ __EFM(Explicit Factor Model)__
 
 __Explicit__  __features__
 
-<img src="Explainable-RS/ExplainableRS14.png" width=500px />
+<img src="RS-Explainability/ExplainableRS14.png" width=500px />
 
 feature: screen/earphone
 
@@ -167,9 +167,9 @@ __EFM(Explicit Factor Model)__
 
 __Latent__  __f__  __actors__
 
-<img src="Explainable-RS/ExplainableRS15.png" width=500px />
+<img src="RS-Explainability/ExplainableRS15.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS16.png" width=500px />
+<img src="RS-Explainability/ExplainableRS16.png" width=500px />
 
 When r = 0\, this model reduces to a traditional latent factorization model on user\-item rating matrix A
 
@@ -177,19 +177,19 @@ which means that the explicit features are not used for recommendations
 
 __EFM(Explicit Factor Model)__  __\+SVD\+\+?__
 
-<img src="Explainable-RS/ExplainableRS17.png" width=500px />
+<img src="RS-Explainability/ExplainableRS17.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS18.png" width=500px />
+<img src="RS-Explainability/ExplainableRS18.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS19.png" width=500px />
+<img src="RS-Explainability/ExplainableRS19.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS20.png" width=410px />
+<img src="RS-Explainability/ExplainableRS20.png" width=410px />
 
 SIGIR’18 Explainable Recommendation via Multi\-Task Learning in Opinionated Text Data
 
-<img src="Explainable-RS/ExplainableRS21.png" width=500px />
+<img src="RS-Explainability/ExplainableRS21.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS22.png" width=500px />
+<img src="RS-Explainability/ExplainableRS22.png" width=500px />
 
 __ConvMF=CNN\+PMF__
 
@@ -203,23 +203,23 @@ M item
 
 N doc
 
-<img src="Explainable-RS/ExplainableRS23.png" width=500px />
+<img src="RS-Explainability/ExplainableRS23.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS24.png" width=481px />
+<img src="RS-Explainability/ExplainableRS24.png" width=481px />
 
-<img src="Explainable-RS/ExplainableRS25.png" width=500px />
+<img src="RS-Explainability/ExplainableRS25.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS26.png" width=156px />
+<img src="RS-Explainability/ExplainableRS26.png" width=156px />
 
-<img src="Explainable-RS/ExplainableRS27.png" width=500px />
+<img src="RS-Explainability/ExplainableRS27.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS28.png" width=128px />
+<img src="RS-Explainability/ExplainableRS28.png" width=128px />
 
-<img src="Explainable-RS/ExplainableRS29.png" width=129px />
+<img src="RS-Explainability/ExplainableRS29.png" width=129px />
 
-<img src="Explainable-RS/ExplainableRS30.png" width=500px />
+<img src="RS-Explainability/ExplainableRS30.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS31.png" width=381px />
+<img src="RS-Explainability/ExplainableRS31.png" width=381px />
 
 2016Convolutional matrix factorization for document context\-aware recommendation
 
@@ -235,7 +235,7 @@ MF    \-Regression
 
 2016Convolutional matrix factorization for document context\-aware recommendation
 
-<img src="Explainable-RS/ExplainableRS32.png" width=500px />
+<img src="RS-Explainability/ExplainableRS32.png" width=500px />
 
 Z\[t\]:update gate vector
 
@@ -243,17 +243,17 @@ R\[t\]:reset gate vector
 
 RecSys17 Sequential User\-based Recurrent Neural Network Recommendations
 
-<img src="Explainable-RS/ExplainableRS33.png" width=500px />
+<img src="RS-Explainability/ExplainableRS33.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS34.png" width=491px />
+<img src="RS-Explainability/ExplainableRS34.png" width=491px />
 
-<img src="Explainable-RS/ExplainableRS35.png" width=500px />
+<img src="RS-Explainability/ExplainableRS35.png" width=500px />
 
 RecSys17 Sequential User\-based Recurrent Neural Network Recommendations
 
-<img src="Explainable-RS/ExplainableRS36.png" width=500px />
+<img src="RS-Explainability/ExplainableRS36.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS37.png" width=500px />
+<img src="RS-Explainability/ExplainableRS37.png" width=500px />
 
 __Text__
 
@@ -265,21 +265,21 @@ __Visual__
 
 __Friends__
 
-<img src="Explainable-RS/ExplainableRS38.png" width=500px />
+<img src="RS-Explainability/ExplainableRS38.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS39.png" width=473px />
+<img src="RS-Explainability/ExplainableRS39.png" width=473px />
 
-<img src="Explainable-RS/ExplainableRS40.png" width=500px />
+<img src="RS-Explainability/ExplainableRS40.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS41.png" width=500px />
+<img src="RS-Explainability/ExplainableRS41.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS42.png" width=500px />
+<img src="RS-Explainability/ExplainableRS42.png" width=500px />
 
 generated character by
 
 character
 
-<img src="Explainable-RS/ExplainableRS43.png" width=500px />
+<img src="RS-Explainability/ExplainableRS43.png" width=500px />
 
 concatenated word
 
@@ -287,43 +287,43 @@ embeddings of user\, item\, and rating
 
 2018Automatic Generation of Natural Language Explanations
 
-<img src="Explainable-RS/ExplainableRS44.png" width=500px />
+<img src="RS-Explainability/ExplainableRS44.png" width=500px />
 
 __Text\-based(NLP)__
 
-<img src="Explainable-RS/ExplainableRS45.png" width=500px />
+<img src="RS-Explainability/ExplainableRS45.png" width=500px />
 
 2018Automatic Generation of Natural Language Explanations
 
-<img src="Explainable-RS/ExplainableRS46.png" width=500px />
+<img src="RS-Explainability/ExplainableRS46.png" width=500px />
 
 __Text\-based(NLP)__
 
-<img src="Explainable-RS/ExplainableRS47.png" width=500px />
+<img src="RS-Explainability/ExplainableRS47.png" width=500px />
 
 2018Automatic Generation of Natural Language Explanations
 
-<img src="Explainable-RS/ExplainableRS48.png" width=500px />
+<img src="RS-Explainability/ExplainableRS48.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS49.png" width=500px />
+<img src="RS-Explainability/ExplainableRS49.png" width=500px />
 
 __Knowledge\-base__  __=path comlpetion__
 
-<img src="Explainable-RS/ExplainableRS50.png" width=500px />
+<img src="RS-Explainability/ExplainableRS50.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS51.png" width=500px />
+<img src="RS-Explainability/ExplainableRS51.png" width=500px />
 
 2019Unifying Knowledge Graph Learning and Recommendation: Towards a Better Understanding of User Preferences
 
 __Knowledge\-base__
 
-<img src="Explainable-RS/ExplainableRS52.png" width=500px />
+<img src="RS-Explainability/ExplainableRS52.png" width=500px />
 
 AAAI2019Unifying Knowledge Graph Learning and Recommendation: Towards a Better Understanding of User Preferences
 
 __Knowledge\-base__
 
-<img src="Explainable-RS/ExplainableRS53.png" width=500px />
+<img src="RS-Explainability/ExplainableRS53.png" width=500px />
 
 AAAI2019Unifying Knowledge Graph Learning and Recommendation: Towards a Better Understanding of User Preferences
 
@@ -339,11 +339,11 @@ owns a hyperplane\, and the translation between head entity and
 
 tail entity is valid only if they are projected to the same hyperplane
 
-<img src="Explainable-RS/ExplainableRS54.png" width=139px />
+<img src="RS-Explainability/ExplainableRS54.png" width=139px />
 
-<img src="Explainable-RS/ExplainableRS55.png" width=176px />
+<img src="RS-Explainability/ExplainableRS55.png" width=176px />
 
-<img src="Explainable-RS/ExplainableRS56.png" width=500px />
+<img src="RS-Explainability/ExplainableRS56.png" width=500px />
 
 WWW2019Unifying Knowledge Graph Learning and Recommendation:Towards a Better Understanding of User Preferences
 
@@ -351,23 +351,23 @@ __Knowledge\-base__
 
 TransH
 
-<img src="Explainable-RS/ExplainableRS57.png" width=500px />
+<img src="RS-Explainability/ExplainableRS57.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS58.png" width=242px />
+<img src="RS-Explainability/ExplainableRS58.png" width=242px />
 
-<img src="Explainable-RS/ExplainableRS59.png" width=500px />
+<img src="RS-Explainability/ExplainableRS59.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS60.png" width=500px />
+<img src="RS-Explainability/ExplainableRS60.png" width=500px />
 
 WWW2019Unifying Knowledge Graph Learning and Recommendation:Towards a Better Understanding of User Preferences
 
 __Evaluation\-RS__
 
-<img src="Explainable-RS/ExplainableRS61.png" width=500px />
+<img src="RS-Explainability/ExplainableRS61.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS62.png" width=500px />
+<img src="RS-Explainability/ExplainableRS62.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS63.png" width=500px />
+<img src="RS-Explainability/ExplainableRS63.png" width=500px />
 
 reli = 1 if the i\-th element is a positive item
 
@@ -385,7 +385,7 @@ BLUE: 不同长度的统计值差异计算
 
 Rough(Recall\-Oriented Understudy for Gisting Evaluation)
 
-<img src="Explainable-RS/ExplainableRS64.png" width=500px />
+<img src="RS-Explainability/ExplainableRS64.png" width=500px />
 
 LCSLongest Child String
 
@@ -413,17 +413,17 @@ Aggregation of Different Explanations
 
 __Explainable ML__
 
-<img src="Explainable-RS/ExplainableRS65.png" width=500px />
+<img src="RS-Explainability/ExplainableRS65.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS66.png" width=500px />
+<img src="RS-Explainability/ExplainableRS66.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS67.png" width=500px />
+<img src="RS-Explainability/ExplainableRS67.png" width=500px />
 
-<img src="Explainable-RS/ExplainableRS68.png" width=500px />
+<img src="RS-Explainability/ExplainableRS68.png" width=500px />
 
 __Explainable__  __D__  __L__
 
-<img src="Explainable-RS/ExplainableRS69.png" width=500px />
+<img src="RS-Explainability/ExplainableRS69.png" width=500px />
 
 Understanding Black\-box Predictions via Influence Functions
 
