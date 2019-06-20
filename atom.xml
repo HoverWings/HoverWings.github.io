@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="hoverwings.site/"/>
-  <updated>2019-06-20T04:40:24.707Z</updated>
+  <updated>2019-06-20T07:16:02.144Z</updated>
   <id>hoverwings.site/</id>
   
   <author>
@@ -17,26 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>GN_Application</title>
-    <link href="hoverwings.site/2019/06/20/GN-Application/"/>
-    <id>hoverwings.site/2019/06/20/GN-Application/</id>
-    <published>2019-06-20T04:40:00.000Z</published>
-    <updated>2019-06-20T04:40:24.707Z</updated>
+    <title>Learning Path</title>
+    <link href="hoverwings.site/2019/06/20/Learning-Path/"/>
+    <id>hoverwings.site/2019/06/20/Learning-Path/</id>
+    <published>2019-06-20T07:15:10.000Z</published>
+    <updated>2019-06-20T07:16:02.144Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:1024px; height:768px;" src="https://www.processon.com/embed/mind/5d0b13c9e4b024123de1ccf7"></iframe><h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;参考资料&quot;&gt;参考资料&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
+        &lt;iframe id=&quot;embed_dom&quot; name=&quot;embed_dom&quot; frameborder=&quot;0&quot; style=&quot;display:block;width:1024px; height:768px;&quot; src=&quot;https://www.processon.com/emb
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>GN_Application</title>
+    <link href="hoverwings.site/2019/06/20/GN-Application/"/>
+    <id>hoverwings.site/2019/06/20/GN-Application/</id>
+    <published>2019-06-20T04:40:00.000Z</published>
+    <updated>2019-06-20T05:07:19.900Z</updated>
+    
+    <content type="html"><![CDATA[<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:525px; height:245px;" src="https://www.processon.com/embed/mind/5d0b13c9e4b024123de1ccf7"></iframe><h2 id="参考资料">参考资料</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;iframe id=&quot;embed_dom&quot; name=&quot;embed_dom&quot; frameborder=&quot;0&quot; style=&quot;display:block;width:525px; height:245px;&quot; src=&quot;https://www.processon.com/embe
       
     
     </summary>

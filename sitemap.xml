@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>hoverwings.site/2019/06/20/Learning-Path/</loc>
+    
+    <lastmod>2019-06-20T07:16:02.144Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>hoverwings.site/2019/06/20/GN-Application/</loc>
     
-    <lastmod>2019-06-20T04:40:24.707Z</lastmod>
+    <lastmod>2019-06-20T05:07:19.900Z</lastmod>
     
   </url>
   
@@ -16,14 +23,14 @@
   </url>
   
   <url>
-    <loc>hoverwings.site/2019/06/07/RS-Explainability/</loc>
+    <loc>hoverwings.site/2019/06/19/RS-GAN/</loc>
     
     <lastmod>2019-06-19T17:34:29.940Z</lastmod>
     
   </url>
   
   <url>
-    <loc>hoverwings.site/2019/06/19/RS-GAN/</loc>
+    <loc>hoverwings.site/2019/06/07/RS-Explainability/</loc>
     
     <lastmod>2019-06-19T17:34:29.940Z</lastmod>
     
@@ -44,14 +51,14 @@
   </url>
   
   <url>
-    <loc>hoverwings.site/categories/index.html</loc>
+    <loc>hoverwings.site/about/index.html</loc>
     
     <lastmod>2019-06-18T17:14:07.838Z</lastmod>
     
   </url>
   
   <url>
-    <loc>hoverwings.site/about/index.html</loc>
+    <loc>hoverwings.site/categories/index.html</loc>
     
     <lastmod>2019-06-18T17:14:07.838Z</lastmod>
     
