@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="hoverwings.site/"/>
-  <updated>2019-06-20T07:16:02.144Z</updated>
+  <updated>2019-06-29T10:54:25.531Z</updated>
   <id>hoverwings.site/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Few-Shot Learning</title>
+    <link href="hoverwings.site/2019/06/29/Few-Shot-Learning/"/>
+    <id>hoverwings.site/2019/06/29/Few-Shot-Learning/</id>
+    <published>2019-06-29T10:53:02.000Z</published>
+    <updated>2019-06-29T10:54:25.531Z</updated>
+    
+    <content type="html"><![CDATA[<p>For exploring the posibility of sovling the cold-start problem in RS, I try to survey the Few-Shot learning.</p><h2 id="rederence">Rederence</h2><blockquote><ul><li><a href></a></li><li><a href></a></li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;For exploring the posibility of sovling the cold-start problem in RS, I try to survey the Few-Shot learning.&lt;/p&gt;
+&lt;h2 id=&quot;rederence&quot;&gt;Reder
+      
+    
+    </summary>
+    
+      <category term="Meta_Leaning" scheme="hoverwings.site/categories/Meta-Leaning/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Learning Path</title>
